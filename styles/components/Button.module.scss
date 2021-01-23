@@ -1,0 +1,28 @@
+@import "@/styles/variables";
+
+button.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 18px 0;
+  font-size: 12.5px;
+  line-height: 12.5px;
+  background: transparent;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 27px;
+  color: white;
+  font-weight: $font-weight-bold;
+  font-size: 12.5px;
+  line-height: 12.5px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: $normal-time-out;
+
+  &:hover {
+    border: 1px solid white;
+  }
+}
