@@ -5,14 +5,7 @@
   flex-direction: column;
   width: 100%;
   margin-bottom: 15px;
-
-  p {
-    display: block;
-    margin-top: 10px;
-    font-size: 12px;
-    box-sizing: border-box;
-    color: $red;
-  }
+  position: relative;
 }
 
 .inpuContainer__inputBox {
@@ -36,6 +29,7 @@
     background-color: transparent;
     color: $white;
     transition: $normal-time-out;
+    z-index: 1;
 
     &:focus {
       outline: none;
@@ -73,4 +67,30 @@
   height: 25px;
   display: flex;
   align-items: center;
+}
+
+// .inpuContainer__inputBoxError {
+//   border: 1px solid $red !important;
+// }
+
+.inpuContainer__error {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  position: absolute;
+  color: $red;
+  border: 1px solid $red;
+  border-radius: 27px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  text-align: right;
+
+  span {
+    display: block;
+    font-size: 12px;
+    line-height: 12.5px;
+    height: 12.5px;
+    font-weight: $font-weight-regular;
+  }
 }

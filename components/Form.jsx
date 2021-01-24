@@ -19,8 +19,8 @@ const Form = () => {
       error: {
         required: "Name is required.",
         pattern: {
-          value: /\d+/,
-          message: "Name is number only.",
+          value: /^[A-Za-z]+$/i,
+          message: "Name must have letters only.",
         },
         minLength: {
           value: 4,
@@ -33,10 +33,10 @@ const Form = () => {
       iPlaceholder: "Email",
       iType: "text",
       error: {
-        required: "Email is required.",
+        required: "Must be name@domain.com.",
         pattern: {
-          value: /\d+/,
-          message: "Email is number only.",
+          value: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+          message: "Email must contain name@domain.com.",
         },
         minLength: {
           value: 12,
@@ -51,8 +51,8 @@ const Form = () => {
       error: {
         required: "Password is required.",
         pattern: {
-          value: /\d+/,
-          message: "Password is number only.",
+          value: null,
+          message: "Password need to contain numbers and letters.",
         },
         minLength: {
           value: 12,

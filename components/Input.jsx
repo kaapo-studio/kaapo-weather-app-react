@@ -46,7 +46,9 @@ const Input = ({
           console.log("messages", messages);
           return messages
             ? Object.entries(messages).map(([type, message]) => (
-                <p key={type}>{message}</p>
+                <div className={styles.inpuContainer__error} key={type}>
+                  <span>{message}</span>
+                </div>
               ))
             : null;
         }}
