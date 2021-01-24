@@ -100,9 +100,8 @@ class Weather extends React.Component {
   };
 
   render() {
-    const APIkey = process.env.local.OPEN_WEATHER_MAP_APP_API_KEY;
+    const APIkey = "7a6c6dcdd9b92e81aae9e9d213b9dbcd";
     const { value, weatherInfo, error } = this.state;
-    console.log("api", APIkey);
 
     const weather = `https://api.openweathermap.org/data/2.5/weather?q=${value}&APPID=${APIkey}&units=metric`;
     const forecast = `https://api.openweathermap.org/data/2.5/forecast?q=${value}&APPID=${APIkey}&units=metric`;
@@ -185,7 +184,8 @@ class Weather extends React.Component {
       });
 
     console.log("weatherInfo", weatherInfo);
-    return <div> console.log("weatherInfo", weatherInfo)</div>;
+
+    return <h1>In progress...</h1>;
   }
 }
 
