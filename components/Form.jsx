@@ -1,5 +1,8 @@
 import { Component } from "react";
 import { useForm } from "react-hook-form";
+import { useSelector, useDispatch } from "react-redux";
+import { selectUser, userLogIn, userLogOut } from "@/lib/slices/userSlice";
+
 import Input from "./Input";
 import Button from "./Button";
 import styles from "@/styles/components/Form.module.scss";
@@ -8,7 +11,15 @@ const Form = () => {
   const { register, errors, handleSubmit } = useForm({
     criteriaMode: "all",
   });
-  const onSubmit = (data) => console.log(data);
+
+  const dispatch = useDispatch();
+  const { auth } = useSelector(selectUser);
+
+  const onSubmit = (data) => {
+    console.log(data);
+    dispatch(userLogIn());
+    console.log("auth", auth);
+  };
 
   const formFields = [
     {

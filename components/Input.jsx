@@ -17,9 +17,9 @@ const Input = ({
   errors,
 }) => {
   return (
-    <div className={styles.inpuContainer}>
-      <div className={styles.inpuContainer__inputBox}>
-        <div className={styles.inpuContainer__inputBox__icon}>
+    <div className={styles.inputContainer}>
+      <div className={styles.inputContainer__inputBox}>
+        <div className={styles.inputContainer__inputBox__icon}>
           <img src={`/icons/auth/${iName}.png`} alt={`${iName} input icon`} />
         </div>
         <input
@@ -46,7 +46,7 @@ const Input = ({
           console.log("messages", messages);
           return messages
             ? Object.entries(messages).map(([type, message]) => (
-                <div className={styles.inpuContainer__error} key={type}>
+                <div className={styles.inputContainer__error} key={type}>
                   <span>{message}</span>
                 </div>
               ))

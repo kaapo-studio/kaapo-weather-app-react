@@ -5,9 +5,6 @@ import Form from "@/components/Form";
 import styles from "@/styles/components/Auth.module.scss";
 
 const Auth = () => {
-  const email = "email";
-  const onSubmit = (data) => console.log(data);
-
   return (
     <main className={styles.auth}>
       <Head>

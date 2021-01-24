@@ -8,6 +8,7 @@
   background-size: cover;
   width: 100%;
   min-height: 100vh;
+  height: 100%;
   padding: 0 15px;
 }
 
@@ -102,6 +103,7 @@
 
   .auth__box__header__indicator {
     min-width: 432px;
+    margin-top: 185px;
   }
 
   .auth__box__header__indicator__stepLine {

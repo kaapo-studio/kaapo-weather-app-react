@@ -1,6 +1,6 @@
 @import "../variables";
 
-.inpuContainer {
+.inputContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.inpuContainer__inputBox {
+.inputContainer__inputBox {
   padding: 15px 20px;
   display: flex;
   align-items: center;
@@ -62,18 +62,18 @@
   }
 }
 
-.inpuContainer__inputBox__icon {
+.inputContainer__inputBox__icon {
   position: absolute;
   height: 25px;
   display: flex;
   align-items: center;
 }
 
-// .inpuContainer__inputBoxError {
+// .inputContainer__inputBoxError {
 //   border: 1px solid $red !important;
 // }
 
-.inpuContainer__error {
+.inputContainer__error {
   display: block;
   width: 100%;
   padding: 15px 20px;
